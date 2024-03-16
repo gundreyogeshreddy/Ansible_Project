@@ -1,6 +1,6 @@
 # Ansible_Project
 
-𝘼𝙣𝙨𝙞𝙗𝙡𝙚 : Ansible is a open source configuration management tool used to automate infrastructure management and configuration,using ansible we can configure 100's of servers with just a single command. 
+𝘼𝙣𝙨𝙞𝙗𝙡𝙚 : Ansible is a open source configuration management tool used to automate infrastructure management and configuration,using ansible we can configure multiple servers with just a single command. 
 
 𝙃𝙤𝙬 𝙞𝙩'𝙨 𝙬𝙤𝙧𝙠𝙨 :
 Ansible uses playbook which is written in YAML syntax where we can define all our tasks and configurations that we want to applied on the all servers.
