@@ -38,4 +38,26 @@ I'm using MobaXterm terminal and below are the steps to run the nginx on target 
 
 => Now,Password less authentication set up is completed,password less authentication is mandatory to ansible to configure another server for configuration management purpose.
 
-* For one or two tasks "ansible adhoc commands" are good to use and for the multiple tasks we should write "ansible-playbooks" which are written in "yaml" syntax
+* For one or two tasks "ansible adhoc commands" are good to use and for the multiple tasks we should write "ansible-playbooks" which are written in "yaml" syntax.
+  
+=> vim inventory_file (in this file copy and paste the target_server ip-address 
+
+* ansible adhoc command to create file in targer server
+
+=> ansible -i inventory_file all -m "shell" -a "touch first_file"(Now we can see the first_file is created in the target server)
+
+* Now write the ansible-playbook which is in yaml syntax
+
+=> vim first-playbook.yml(first-playbook is available in this repository,insert and save it)
+
+=> ansible-playbook -i inventory_file first-playbook.yml(which runs the ansible playbook and install and starts nginx)
+
+* Now in Target-server
+
+=> sudo systemctl status nginx (which shows the status of nginx is running)
+
+* Now in ansible-server,to learn ansible in a better way use verbose (-vvv) for ansible and to understand what ansible is doing internally.
+
+=> ansible-playbook -vvv -i inventory_file first-playbook.yml (To understand what's happening when we run the playbook.We can run it with the verbose (-v)extra v provides more debug output to the users).
+
+=> Finally,nginx server is running on the target-server ✅
