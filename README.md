@@ -14,16 +14,28 @@ Task : Install and Start nginx on target server
 I'm using MobaXterm terminal and below are the steps to run the nginx on target server,
 * Steps Completed in ANSIBLE_SERVER,
 * Install ansible and password less authentication required.
+  
 => sudo apt update 
+
 => sudo apt install ansible
+
 => ansible --version 
+
 => ssh-keygen
+
 => ls /home/ubuntu/.ssh/ (or) ls ~/.ssh/
+
 => cat ~/.ssh/id_rsa.pub
+
 * Steps completed in Target Server,
 => ssh-keygen
+
 =>  ls /home/ubuntu/.ssh/ (or) ls ~/.ssh/
+
 => vim ~/.ssh/authorized_keys ->now copy and paste the content from keygen ".pub content" to here in target server authorized_keys and save it.
+
 => Now in ansible_server,ssh to target server (ssh target-ip address)
-=> Now,Password less authentication set up is completed,password less authentication is mandatory to ansible 
+
+=> Now,Password less authentication set up is completed,password less authentication is mandatory to ansible to configure another server for configuration management purpose.
+
 * For one or two tasks "ansible adhoc commands" are good to use and for the multiple tasks we should write "ansible-playbooks" which are written in "yaml" syntax
