@@ -40,7 +40,7 @@ I'm using MobaXterm terminal and below are the steps to run the nginx on target 
 
 * For one or two tasks "ansible adhoc commands" are good to use and for the multiple tasks we should write "ansible-playbooks" which are written in "yaml" syntax.
   
-=> vim inventory_file (in this file copy and paste the target_server ip-address 
+=> vim inventory_file (in this file copy and paste the target_server ip-address)
 
 * ansible adhoc command to create file in targer server
 
