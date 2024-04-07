@@ -15,7 +15,7 @@ I'm using MobaXterm terminal and below are the steps to run the nginx on target 
 * Steps Completed in ANSIBLE_SERVER,
 * Install ansible and password less authentication required.
   
-=> sudo apt update 
+=> sudo apt update
 
 => sudo apt install ansible
 
@@ -52,7 +52,7 @@ I'm using MobaXterm terminal and below are the steps to run the nginx on target 
 
 => ansible-playbook -i inventory_file first-playbook.yml(which runs the ansible playbook and install and starts nginx)
 
-* Now in Target-server
+* Now in Target-Server
 
 => sudo systemctl status nginx (which shows the status of nginx is running)
 
