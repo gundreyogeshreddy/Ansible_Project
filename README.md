@@ -10,7 +10,7 @@ After we have the playbooks and defined the servers in the inventory file,we can
 
 
 
-Task : Install and Start nginx on target server
+Task : Install and Start nginx on target server.
 I'm using MobaXterm terminal and below are the steps to run the nginx on target server,
 * Steps Completed in ANSIBLE_SERVER,
 * Install ansible and password less authentication required.
