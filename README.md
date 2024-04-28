@@ -17,7 +17,7 @@ I'm using MobaXterm terminal and below are the steps to run the nginx on target 
   
 => sudo apt update
 
-=> sudo apt install ansible
+=> sudo apt install ansible.
 
 => ansible --version 
 
