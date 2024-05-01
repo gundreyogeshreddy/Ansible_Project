@@ -42,7 +42,7 @@ I'm using MobaXterm terminal and below are the steps to run the nginx on target 
   
 => vim inventory_file (in this file copy and paste the target_server ip-address)
 
-* ansible adhoc command to create file in targer server
+* ansible adhoc command to create file in target server.
 
 => ansible -i inventory_file all -m "shell" -a "touch first_file"(Now we can see the first_file is created in the target server)
 
