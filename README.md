@@ -4,7 +4,7 @@
 Ansible is a open source configuration management tool used to automate infrastructure and configuration management ,using ansible we can configure multiple servers at a time with just one single command.
 
 𝙃𝙤𝙬 𝙞𝙩'𝙨 𝙬𝙤𝙧𝙠𝙨 :
-Ansible uses playbook which is written in YAML syntax where we can define all our tasks and configurations that we want to applied on the all servers.
+Ansible uses playbook which is written in YAML syntax where we can define all our tasks and configurations that we want to apply on servers.
 And we need inventory file or host file which consists of IP addressess of all the servers,on which we want to run the playbooks.
 After we have the playbooks and defined the servers in the inventory file,we can run the ansible command which will run the playbook on the all servers defined in the inventory file using ssh.This is how ansible can be used to manage and configure multiple servers at once.✅
 
@@ -12,12 +12,12 @@ After we have the playbooks and defined the servers in the inventory file,we can
 
 Task : Install and Start nginx on target server.
 I'm using MobaXterm terminal and below are the steps to run the nginx on target server,
-* Steps Completed in ANSIBLE_SERVER,
+* * Steps :
 * Install ansible and password less authentication required.
   
 => sudo apt update
 
-=> sudo apt install Ansible.
+=> sudo apt install ansible
 
 => ansible --version 
 
