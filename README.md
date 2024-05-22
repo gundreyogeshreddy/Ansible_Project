@@ -58,6 +58,6 @@ I'm using MobaXterm terminal and below are the steps to run the nginx on target 
 
 * Now in ansible-server,to learn ansible in a better way use verbose (-vvv) for ansible and to understand what ansible is doing internally.
 
-=> ansible-playbook -vvv -i inventory_file first-playbook.yml (To understand what's happening when we run the playbook.We can run it with the verbose (-v)extra v provides more debug output to the users).
+=> ansible-playbook -vvvvv -i inventory_file first-playbook.yml (To understand what's happening when we run the playbook.We can run it with the verbose (-v) extra "v" provides more debug output to the users).
 
 => Finally,nginx server is running on the target-server ✅
